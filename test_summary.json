@@ -1,0 +1,17 @@
+{
+    "nr_of_mentees": 4,
+    "languages": [
+        "English",
+        "German",
+        "Japanese",
+        "Spanish"
+    ],
+    "avg_name_length": 13.75,
+    "shortest_names": [
+        "Ron Weasley"
+    ],
+    "longest_names": [
+        "Albus Dumbledore",
+        "Hermione Granger"
+    ]
+}

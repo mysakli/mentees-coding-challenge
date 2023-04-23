@@ -1,0 +1,21 @@
+{
+    "nr_of_mentees": 100,
+    "languages": [
+        "Czech",
+        "English",
+        "German",
+        "Polish",
+        "Romanian",
+        "Slovak",
+        "Spanish"
+    ],
+    "avg_name_length": 13.19,
+    "shortest_names": [
+        "Ann King",
+        "Cody Lau",
+        "Sana Van"
+    ],
+    "longest_names": [
+        "Javontena Delossantos"
+    ]
+}
