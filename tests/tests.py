@@ -5,8 +5,8 @@ import os, json
 
 class TestMenteeSummary(unittest.TestCase):
     def setUp(self):
-        self.summary = MenteeSummary('test-list.csv')
-        self.file_path = 'test_summary.json'
+        self.summary = MenteeSummary('./tests/test-list.csv')
+        self.file_path = './tests/test_summary.json'
     
     def test_count_mentees(self):
         self.assertEqual(self.summary._MenteeSummary__count, 4)
@@ -24,7 +24,7 @@ class TestMenteeSummary(unittest.TestCase):
         self.assertEqual(self.summary.get_longest_name(), ['Albus Dumbledore', 'Hermione Granger'])
     
     def test_file_created(self):
-        self.summary.create_summary_json('test_summary.json')
+        self.summary.create_summary_json('tests/test_summary.json')
         self.assertTrue(os.path.isfile(self.file_path))
     
     def test_file_contents(self):
