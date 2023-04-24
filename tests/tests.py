@@ -9,10 +9,10 @@ class TestMenteeSummary(unittest.TestCase):
         self.file_path = './tests/test_summary.json'
     
     def test_count_mentees(self):
-        self.assertEqual(self.summary._MenteeSummary__count, 4)
+        self.assertEqual(self.summary.get_count(), 4)
     
     def test_avg_name_length(self):
-        self.assertEqual(self.summary._MenteeSummary__avg_name_length, 13.75)
+        self.assertEqual(self.summary.get_avg_name_length(), 13.75)
 
     def test_unique_languages(self):
         self.assertEqual(self.summary.get_unique_languages(), ['English', 'German', 'Japanese', 'Spanish'])

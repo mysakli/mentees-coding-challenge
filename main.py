@@ -14,6 +14,8 @@ class MenteeSummary:
     # Get number of mentees
     self.__count = self.__mentees.shape[0]
 
+  
+
     # Calculate average full name length
     self.__mentees[
       'full_name'] = self.__mentees.first_name + ' ' + self.__mentees.last_name
@@ -24,7 +26,13 @@ class MenteeSummary:
     self.sorted_mentees = self.__mentees.sort_values('name_length')
     self.sorted_mentees['length_sorted_id'] = range(1, self.__count + 1)
     self.sorted_mentees.set_index('length_sorted_id', inplace=True)
+  
+  def get_count(self):
+    return self.__count
 
+  def get_avg_name_length(self):
+        return self.__avg_name_length
+  
   # Find the shortest full name(s)
   def get_shortest_name(self):
     i = 1
